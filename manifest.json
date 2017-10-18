@@ -4,24 +4,17 @@
 	"version": "1.0.0",
 	"browser_action": {
 		"default_popup": "popup.html",
-		"default_icon": "mouse.png",
-		"default_title": "UNLIMITEDの管理"
+		"default_icon": "manga.png",
+		"default_title": "EPUB作成"
 	},
 	"options_ui": {
-		// 記載が必須
 		"page": "index.html",
-		// true推奨
 		"chrome_style": false
+		,"open_in_tab": true
 	},
-	"content_scripts": [
-		{
-			"matches": ["https://www.amazon.co.jp/*"],
-			"js": [ "myscript.js"]
-		}
-	],
 	"description": "固定レイアウトのEPUBを作るクローム拡張",
 	  "icons": {
-      "128": "mouse.png"
+      "128": "manga.png"
    },
    "short_name": "FLEpub3JS",
 	"permissions": [

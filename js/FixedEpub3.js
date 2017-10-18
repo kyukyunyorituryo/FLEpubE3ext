@@ -107,6 +107,9 @@ document.addEventListener("DOMContentLoaded", function(){
   document.getElementById('files').addEventListener('change', handleFileSelect, false);
   });
 //sort　本文画像の整列
+document.addEventListener("DOMContentLoaded", function(){
+document.getElementById("sort").addEventListener("click",mySort);
+  });
 function mySort() {
 var list = document.getElementById('list');
 var Nlist=list.getElementsByTagName('span');
@@ -132,6 +135,7 @@ var myArray = Array.prototype.slice.call(Nlist);
 });
 addselect();
 }
+
 //selectの追加
 function addselect(){
 var navtext= document.getElementsByName("selectNav")
@@ -142,6 +146,9 @@ $("*[name=selectNav]").append("<option>"+ imgFO[j].file_name +"</option>");
 }
 };
 //selectの削減
+document.addEventListener("DOMContentLoaded", function(){
+document.getElementById("removeselect").addEventListener("click",removeselect);
+  });
 function removeselect(){
 if ($("*[name=formNav]").length>1){
 $("*[name=formNav]:last").remove()
@@ -154,6 +161,9 @@ $("*[name=formNav]:last").remove()
 
 
 //目次の追加
+document.addEventListener("DOMContentLoaded", function(){
+document.getElementById("addmenu").addEventListener("click",addmenu);
+  });
 function addmenu(){
 var menu = document.getElementsByTagName("form")[1];
 var cmenu= menu.cloneNode(true);
