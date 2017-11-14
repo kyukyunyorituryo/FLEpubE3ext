@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Image to EPUB3",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_icon": "manga.png",
